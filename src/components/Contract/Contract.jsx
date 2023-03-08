@@ -8,7 +8,7 @@ const Contract = () => {
       <div className="absolute top-[10%] md:top-[5%] lg:-top-[10%] -z-10 left-0">
         <img src={gradient} alt="" />
       </div>
-      <div className="container z-20">
+      <div className="relative container z-20">
         <div>
           <p className="text-[14px] m-10 font-light font-MacPawFixel">
             Maximize Liquidity & Earn <br /> Passive Rewards with BubbleSwap
