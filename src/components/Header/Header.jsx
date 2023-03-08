@@ -41,7 +41,7 @@ const Header = () => {
       </div>
       <Navbar />
 
-      {isOpen && <MobileMenu />}
+      {isOpen && <MobileMenu openNavbar={openNav} isOpen={isOpen} />}
       {/*  */}
       {/* Hero aria */}
       <div className=" z-30">

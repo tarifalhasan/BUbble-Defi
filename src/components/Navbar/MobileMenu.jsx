@@ -6,35 +6,40 @@ import close from '../../assets/image/close.png';
 import gradient1 from '../../assets/image/overlydown.png';
 import graident from '../../assets/image/mobilemenugradient.png';
 import icon from '../../assets/image/icon.png';
-const MobileMenu = () => {
+const MobileMenu = ({ openNavbar, isOpen }) => {
   return (
-    <div className="relative">
-      <div className="lg:hidden   z-[999999] text-white px-4 h-screen bg-[#0d141b]">
-        <ul className="flex p-10 gap-6 flex-col">
-          {navLinks.map((link, index) => (
-            <li
-              className="text-[18px] font-sandro ms:text-[26px] text-white uppercase"
-              key={index}
-            >
-              {link.name}
-            </li>
-          ))}
-        </ul>
-        <div className="btn absolute top-[70%]">
-          <div className="">
-            <button className="menu_btn">Launch Testnet</button>
-            <div className=" top-[-30%] left-[70%] right-0">
-              <img src={icon} alt="" />
-            </div>
-          </div>
+    <div
+      className={`fixed mobile_navbar 2xl:px-0 px-4 pt-6 w-full h-full bg-skin-dark  ${
+        isOpen ? 'right-0' : 'right-full'
+      }  z-50 top-0 bg-[#0d141b] `}
+    >
+      <div className="logo  flex  justify-between">
+        <div className="flex gap-x-10 items-center">
+          <button onClick={() => openNavbar()}>
+            <img className="w-[21px]" src={close} alt="" />
+          </button>
+          <img
+            src={logo}
+            className="h-[49px] mr-3 sm:h-[56px]"
+            alt="solve3web"
+          />
         </div>
       </div>
-      <div className="absolute bottom-0 left-0 right-0">
-        <img src={gradient1} className="w-[100vw]" alt="" />
-      </div>
-      <div className="absolute top-0 right-0">
-        <img src={graident} alt="" />
-      </div>
+      <ul className="flex flex-col pt-7 md:flex-row gap-6">
+        {navLinks.map((link) => (
+          <li key={link.href} className="text-white" onClick={openNavbar}>
+            <a
+              href={link.href}
+              className="block py-2 pl-3 pr-4 text-white text-base leading-[19px] font-bold font-segoe"
+            >
+              {link.name}
+            </a>
+          </li>
+        ))}
+        <button type="button" className="menu_btn font-sandro">
+          Launch App
+        </button>
+      </ul>
     </div>
   );
 };
