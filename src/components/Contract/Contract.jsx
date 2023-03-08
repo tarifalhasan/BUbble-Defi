@@ -38,7 +38,7 @@ const Contract = () => {
       </div>
       <div className="bubble my-3 container px-2">
         <div className="grid gap-0 md:gap-4 lg:gap-0 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
-          <div className="bubble_contract rounded-br-3xl  rounded-bl-3xl  md:rounded-3xl">
+          <div className="bubble_contract rounded-tr-3xl  rounded-tl-3xl  md:rounded-3xl">
             <p className="md:text-centergap-x-2 flex items-center py-5 md:block">
               <h1 className="md:text-[26px] font-bold text-[3em] font-sandro text-pink-500">
                 5%
