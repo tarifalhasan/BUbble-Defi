@@ -8,7 +8,7 @@ const Arbitrum = () => {
           <img src={ArbitrumImg} alt="ArbitrumImg" />
         </div>
         <div className="relative">
-          <div className="space-y-4 lg:absolute top-[36%]">
+          <div className="space-y-4 text-center md:text-left lg:absolute top-[36%]">
             <p className="text-[24px] md:text-[32px] font-sandro">
               UNLOCK A NEW FRONTIER WITH BUBBLE & ARBITRUM
             </p>

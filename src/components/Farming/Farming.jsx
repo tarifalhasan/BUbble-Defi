@@ -8,7 +8,7 @@ const Farming = () => {
         id="farming"
         className="grid grid-cols-1 gap-y-10 px-8 lg:px-12  place-items-center py-3 md:grid-cols-2"
       >
-        <div className="space-y-3">
+        <div className="space-y-3 py-3 text-center md:text-left">
           <p className="text-[32px] font-sandro">Liquidity Yield Farming</p>
           <p className="text-[20px] font-MacPawFixel font-light leading-[1.5]">
             Join the revolution and take control of your financial future with

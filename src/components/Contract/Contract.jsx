@@ -17,7 +17,7 @@ const Contract = () => {
           <img className="lg:hidden" src={contractImgMobile} alt="" />
           <div className="lg:flex my-1">
             <div className="basis-[40%]"></div>
-            <div className="basis-[60%]">
+            <div className="basis-[60%] text-center md:text-left">
               <p className="text-[14px] md:text-[16px]  leading-snug">
                 BubbleSwap is a revolutionary DeFi protocol that offers a unique
                 liquidity tax of 5% — increasing your LP tokens' value with
@@ -26,6 +26,12 @@ const Contract = () => {
                 of yield farming and earn passive rewards with BubbleSwap's
                 liquidity crunch-proof technology.
               </p>
+              <a
+                href="/"
+                className="text-center right-[8%] md:absolute md:text-right"
+              >
+                <img className="  my-10 mx-auto" src="/checkout.png" alt="" />
+              </a>
             </div>
           </div>
         </div>

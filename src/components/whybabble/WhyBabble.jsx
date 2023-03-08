@@ -10,12 +10,12 @@ const WhyBabble = () => {
             <img className="lg:max-w-[600px]" src={whyusimg} alt="" />
           </div>
         </div>
-        <div className=" basis-[65%] mt-32 md:mt-32 lg:mt-1 z-20 space-y-7 ">
-          <h2 className="text-[1em] md:text-[40px] uppercase font-sandro">
+        <div className=" basis-[65%] text-center mt-32 md:mt-32 lg:mt-1 z-20 space-y-7 ">
+          <h2 className="text-[24px] md:text-[40px] uppercase font-sandro">
             The Ultimate Governance & Utility Token
           </h2>
           <div>
-            <p className="text-[20px]">
+            <p className="text-[14px] md:text-[20px]">
               Join the revolution and take control of your financial future with
               Bubble's $BUB token.{' '}
               <span className="text-[#00D0AA]">
@@ -26,7 +26,7 @@ const WhyBabble = () => {
               of the decentralized financial movement with Bubble.
             </p>
             <div className="space-y-5">
-              <p className="text-[14.5px] mt-5 text-[#C3C9DA]">
+              <p className="text-[12px] md:text-[14.5px] mt-5 text-[#C3C9DA]">
                 Vote for the future of Bubble and submit your proposals.
                 Together, the community has ownership over the treasury and on
                 top of that passive income earnings based on generated revenue.

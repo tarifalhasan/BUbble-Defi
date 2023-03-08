@@ -86,6 +86,18 @@ const Header = () => {
                 src={collectWallectImgMobile}
                 alt="collectWallectImgMobile"
               />
+              <div className="md-hidden space-y-3 px-5">
+                <h3 className="text-center text-[#ffffff] text-[20px] font-MacPawFixel">
+                  Get ready to experience the future of decentralized trading
+                  with Bubble DeFi.
+                </h3>
+                <p className="text-[#C3C9DA] text-center text-[14px]">
+                  Our revolutionary Liquid DEX Trading platform offers deeper
+                  liquidity, smarter trades, and higher rewards. Say goodbye to
+                  suboptimal trades and hello to efficient, secure, and
+                  profitable market activity.
+                </p>
+              </div>
             </div>
           </div>
         </div>
