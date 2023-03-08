@@ -3,23 +3,23 @@ import ArbitrumImg from '../../assets/image/Arbitrum.png';
 const Arbitrum = () => {
   return (
     <section id="arbitrum">
-      <div className="grid container grid-cols-1 lg:grid-cols-2">
+      <div className="grid container lg:px-14 grid-cols-1 lg:grid-cols-2">
         <div>
           <img src={ArbitrumImg} alt="ArbitrumImg" />
         </div>
-        <div className="relative">
+        <div className="relative w-full lg:max-w-[560px]">
           <div className="space-y-4 text-center md:text-left lg:absolute top-[36%]">
-            <p className="text-[24px] md:text-[32px] font-sandro">
+            <h1 className="text-[1.5em] font-bold md:text-[2em] font-sandro">
               UNLOCK A NEW FRONTIER WITH BUBBLE & ARBITRUM
-            </p>
-            <p className="text-[20px]">
-              Join the{' '}
-              <span className="text-[#00D0AA] text-[20px]">
-                cutting-edge DeFi movement
-              </span>{' '}
+            </h1>
+            <p className="text-[1.25em]">
+              Join the <span></span>
+              <span className="text-[#00D0AA] text-[1.25em]">
+                cutting-edge DeFi movement <span></span>
+              </span>
               by bridging the gap between two thriving chains.
             </p>
-            <p className="text-[14px] text-[#C3C9DA]">
+            <p className="text-[0.875em] text-[#C3C9DA]">
               Integrating the Arbitrum bridge, Bubble users now have the
               opportunity to trade their tokens on both the Ethereum and
               Arbitrum chains, unlocking a whole new realm of possibilities and

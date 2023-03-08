@@ -6,26 +6,32 @@ const Farming = () => {
     <div className="container space-y-2 md:mt-[8rem] lg:px-12 py-6">
       <div
         id="farming"
-        className="grid grid-cols-1 gap-y-10 px-8 lg:px-12  place-items-center py-3 md:grid-cols-2"
+        className="grid grid-cols-1 gap-y-10 px-8 lg:px-12  py-3 md:grid-cols-2"
       >
-        <div className="space-y-3 py-3 text-center md:text-left">
-          <p className="text-[32px] font-sandro">Liquidity Yield Farming</p>
-          <p className="text-[20px] font-MacPawFixel font-light leading-[1.5]">
-            Join the revolution and take control of your financial future with
-            Bubble's $BUB token.{' '}
+        <div className="space-y-3 pt-7 py-3 text-center md:text-left">
+          <p className="text-[2em] uppercase font-sandro">
+            Liquidity Yield Farming
           </p>
-          <p className="text-[13px] text-[#C3C9DA]">
+          <p className="text-[1.25em] font-MacPawFixel font-light leading-[1.5]">
+            Join the revolution and take control of your financial future with
+            Bubble's $BUB token.
+          </p>
+          <p className="text-[0.813em] text-[#C3C9DA]">
             With delegated community governance and stake-based earnings, you
             can now vote on proposals and earn passive income from the
             protocol's generated revenue. Empower yourself and become a part of
             the decentralized financial movement with Bubble.
           </p>
-          <button className="btn-primary w-full md:w-auto px-4 py-3">
+          <button className="btn-primary uppercase w-full md:w-auto px-4 py-3">
             Start Earning Yield
           </button>
         </div>
-        <div className="flex items-center">
-          <img className="w-[80%] block mx-auto" src={farming} alt="" />
+        <div className="flex pt-5 items-center">
+          <img
+            className="w-full max-w-[400px] block my-4 mx-auto"
+            src={farming}
+            alt=""
+          />
         </div>
       </div>
       <div className="grid gap-1 grid-cols-1 md:grid-cols-2">

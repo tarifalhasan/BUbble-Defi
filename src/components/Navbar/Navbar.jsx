@@ -24,7 +24,13 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="x-40">
-          <button className="menu_btn">Launch Testnet</button>
+          <a
+            href="https://dapp.bubbledefi.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="menu_btn uppercase">Launch Testnet</button>
+          </a>
         </div>
         <div className="absolute -z-10 top-1 right-0">
           <img className="max-w-[300px]" src={gradient1} alt="" />

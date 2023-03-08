@@ -1,5 +1,7 @@
-import React, { useState } from 'react';
-import Navbar from '../Navbar/Navbar';
+import React, { useState, lazy } from 'react';
+
+const Navbar = lazy(() => import('../Navbar/Navbar'));
+
 import collectWallectImg from '../../assets/image/collectwallat.png';
 import collectWallectImgMobile from '../../assets/image/collectwalletmobile.png';
 import bingImg from '../../assets/image/header.png';
@@ -29,7 +31,7 @@ const Header = () => {
       <div className="absolute md:top-0 -z-40 left-0">
         <img className=" h-[358px] md:h-auto" src={graidint1} alt="" />
       </div>
-      <div className="flex gap-10 container lg:hidden  items-center">
+      <div className="flex gap-10 container max-w-[1920px] lg:hidden  items-center">
         <button onClick={openNav}>
           {!isOpen ? (
             <img src={hombargarMenu} alt="" />
@@ -48,33 +50,35 @@ const Header = () => {
         <div className="">
           <div className="grid grid-cols-1 container pt-10 md:pt-20 lg:grid-cols-2">
             <div className=" md:pt-10">
-              <p className="lg:text-center relative m-0 text-center leading-[2] md:leading-[1.5] text-[24px] lg:text-[40px] font-sandro uppercase">
-                Unleash the Power of Liquid Trading
-                <br />
-                <span className="text-[24px]  text-[#C3C9DA] font-sandro">
-                  with Bubble DeFi!{' '}
-                </span>
-                <div className="absolute left-[65%] top-0">
+              <h2 className=" m-0 relative p-0  leading-[2] md:leading-[1.5] text-[24px] lg:text-[40px] font-sandro uppercase">
+                <span className="ml-10"> Unleash the Power</span>
+                <span className="block "> of Liquid Trading</span>
+
+                <div className="-z-10 absolute left-[44%] top-[16%]">
                   <img src={bubble1} alt="bubble1" />
                 </div>
-                <div className="absolute left-[47%] top-[-10%]">
+                <div className="absolute left-[34%] -z-10 top-[-18%]">
                   <img src={bubble2} alt="bubble1" />
                 </div>
-              </p>
-              <div className="hidden md:block space-y-3 lg:ml-16 mr-7 pt-10">
-                <p className="text-[1.1em] tracking-[0.00938em]	  font-normal leading-[1.5] ">
-                  Get ready to experience the future of decentralized trading
-                  with Bubble DeFi.
-                </p>
-                <p className="text-[#C3C9DA] text-[14px]">
-                  Our revolutionary Liquid DEX Trading platform offers deeper
-                  liquidity, smarter trades, and higher rewards. Say goodbye to
-                  suboptimal trades and hello to efficient, secure, and
-                  profitable market activity.
-                </p>
+              </h2>
+              <div className="hidden md:block space-y-3 lg:ml-16 mr-7 ">
+                <span className="text-[23px] block text-[#C3C9DA] font-sandro">
+                  with Bubble DeFi!
+                </span>
+                <div className="pt-10">
+                  <p className="text-[1.25em] tracking-[0.00938em]	  font-normal leading-[1.5] ">
+                    Get ready to experience the future of decentralized trading
+                    with Bubble DeFi.
+                  </p>
+                  <p className="text-[#C3C9DA] text-[0.875em]">
+                    Our revolutionary Liquid DEX Trading platform offers deeper
+                    liquidity, smarter trades, and higher rewards. Say goodbye
+                    to suboptimal trades and hello to efficient, secure, and
+                    profitable market activity.
+                  </p>
+                </div>
               </div>
             </div>
-
             <div>
               <img
                 className=" hidden lg:block w-[120%]"
@@ -86,7 +90,7 @@ const Header = () => {
                 src={collectWallectImgMobile}
                 alt="collectWallectImgMobile"
               />
-              <div className="md-hidden space-y-3 px-5">
+              <div className="md:hidden space-y-3 px-5">
                 <h3 className="text-center text-[#ffffff] text-[20px] font-MacPawFixel">
                   Get ready to experience the future of decentralized trading
                   with Bubble DeFi.
@@ -101,6 +105,32 @@ const Header = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className="absolute hidden lg:block top-[88%] left-1/2 right-1/2">
+        <button
+          className="hover:text-slate-50"
+          onClick={() =>
+            window.scrollTo({
+              top: window.innerHeight,
+              behavior: 'smooth',
+            })
+          }
+        >
+          <svg
+            width="44"
+            height="44"
+            viewBox="0 0 44 44"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M22 31.3333L12.6667 22M22 31.3333V12.6667M22 31.3333L31.3333 22M43 22C43 10.402 33.598 1 22 1C10.402 1 1 10.402 1 22C1 33.598 10.402 43 22 43C33.598 43 43 33.598 43 22Z"
+              stroke="#F1F5FD"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
+        </button>
       </div>
     </div>
   );
