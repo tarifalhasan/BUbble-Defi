@@ -2,8 +2,8 @@ import React from 'react';
 import { navLinks } from '../../constant/data';
 const Footer = () => {
   return (
-    <div className="relative container">
-      <div className="absolute top-[-45%] right-0">
+    <div className="relative px-2 container">
+      <div className="absolute top-[-70%] py-3 px-7 md:px-0 right-0">
         <button
           className="flex text-slate-400 border border-slate-400 rounded-full h-10 w-10 right-0 items-center justify-center"
           onClick={() => window.scrollTo(0, 0)}
@@ -25,7 +25,7 @@ const Footer = () => {
         </button>
       </div>
 
-      <footer className=" px-5 hidden lg:flex  justify-between items-center">
+      <footer className=" px-5  hidden lg:flex  justify-between items-center">
         <p className="text-[13px]">2023 — BubbleSwap</p>
         <div className="nav-links">
           <ul className="flex items-center gap-x-5">

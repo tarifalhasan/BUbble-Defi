@@ -51,6 +51,12 @@ const Contact = () => {
             />
           </a>
         </div>
+        <button className=" md:sr-only flex justify-center w-full btn-primary px-9 py-4">
+          <span className="tezr"> PITCH DECK</span>
+        </button>
+        <div className="hidden md:block absolute top-[90%] md:top-[83%] lg:top-[72%] right-[10%]">
+          <button className="w-full btn-primary px-9 py-4">PITCH DECK</button>
+        </div>
       </div>
     </div>
   );

@@ -46,7 +46,7 @@ const Header = () => {
       {/* Hero aria */}
       <div className=" z-30">
         <div className="">
-          <div className="grid grid-cols-1 container md:pt-20 lg:grid-cols-2">
+          <div className="grid grid-cols-1 container pt-10 md:pt-20 lg:grid-cols-2">
             <div className=" md:pt-10">
               <p className="lg:text-center relative m-0 text-center leading-[2] md:leading-[1.5] text-[24px] lg:text-[40px] font-sandro uppercase">
                 Unleash the Power of Liquid Trading
@@ -82,7 +82,7 @@ const Header = () => {
                 alt="collectWallectImgMobile"
               />
               <img
-                className=" lg:hidden"
+                className="mt-[42px] lg:hidden"
                 src={collectWallectImgMobile}
                 alt="collectWallectImgMobile"
               />

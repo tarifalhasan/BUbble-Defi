@@ -4,21 +4,21 @@ import pinksale from '../../assets/image/pinksale.png';
 import dexview from '../../assets/image/dexview.png';
 const OurPartners = () => {
   return (
-    <div id="partners" className="container px-2 py-4">
-      <div className="flex  gap-4 flex-col items-center ">
-        <h2 className="text-[1.6em]">our partners </h2>
-        <div>
-          <ul className="flex items-center gap-6">
-            <li>
-              <img className="w-[170px]" src={gotbitLogo} alt="gotbitLogo" />
-            </li>
-            <li>
-              <img className="w-[170px]" src={pinksale} alt="gotbitLogo" />
-            </li>
-            <li>
-              <img className="w-[170px]" src={dexview} alt="gotbitLogo" />
-            </li>
-          </ul>
+    <div id="partners" className="container  px-2 py-4">
+      <div className="">
+        <h2 className="text-[1.2em] pb-16 text-center uppercase text-muted font-sandro lg:text-[29px]">
+          our partners{' '}
+        </h2>
+        <div className="grid gap-9 grid-cols-1 lg:grid-cols-3">
+          <div className="partner">
+            <img className="w-[200px]" src={pinksale} alt="" />
+          </div>
+          <div className="partner">
+            <img className="w-[200px]" src={dexview} alt="" />
+          </div>
+          <div className="partner">
+            <img className="w-[200px]" src={gotbitLogo} alt="" />
+          </div>
         </div>
       </div>
     </div>
