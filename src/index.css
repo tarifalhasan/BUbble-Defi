@@ -3,26 +3,10 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: 'MacPaw';
-  src: url('./assets/fonts/MacPawFixel/MacPawFixelDisplay/OpenType-PS/MacPawFixelDisplay-Regular.otf')
-    format('opentype');
-}
-@font-face {
-  font-family: 'MacPaw-light';
-  src: url('./assets/fonts/MacPawFixel/MacPawFixelDisplay/OpenType-PS/MacPawFixelDisplay-Light.otf')
-    format('opentype');
-  font-weight: 200;
-}
-/* Webfont: MacPawFixelText-Regular */
-@font-face {
   font-family: 'MacPawFixelTextRegular';
-  src: url('./assets/fonts/MacPawFixel/MacPawFixelText/Web-PS/MacPawFixelText-Regular.woff2')
-    format('woff2');
+  src: url('./assets/fonts/MacPawFixelText-Regular.woff2') format('woff2');
 }
 
-p {
-  font-family: 'MacPaw-light';
-}
 @font-face {
   font-family: 'sandrogrottesco';
   src: url('./assets/fonts/sandrogrottesco.otf');
