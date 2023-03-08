@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { lazy } from 'react';
 import farming from '../../assets/image/farming.png';
-import Card from './Card';
+
+const Card = lazy(() => import('./Card'));
+
 const Farming = () => {
   return (
     <div className="container space-y-2 md:mt-[8rem] lg:px-12 py-6">
