@@ -7,6 +7,11 @@ module.exports = {
         sandro: "'sandrogrottesco'",
         MacPawFixel: "'MacPawFixelTextRegular'",
       },
+      colors: {
+        skin: {
+          darkBlue: '',
+        },
+      },
     },
   },
   plugins: [],

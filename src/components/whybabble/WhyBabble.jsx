@@ -4,14 +4,14 @@ import discordIcon from '../../assets/image/brand-discord.svg';
 const WhyBabble = () => {
   return (
     <div className="relative">
-      <div className="flex flex-col lg:flex-row mt-32 container px-14 items-center">
+      <div className="flex flex-col lg:flex-row mt-32 container md:px-14 items-center">
         <div className=" basis-[35%] ">
-          <div className="absolute -top-[60%] left-0">
+          <div className="absolute -z-10 top-[-28%]  md:-top-[60%] left-0">
             <img className="lg:max-w-[600px]" src={whyusimg} alt="" />
           </div>
         </div>
-        <div className=" basis-[65%] space-y-7 ">
-          <h2 className="text-[40px] uppercase font-sandro">
+        <div className=" basis-[65%] mt-32 md:mt-32 lg:mt-1 z-20 space-y-7 ">
+          <h2 className="text-[1em] md:text-[40px] uppercase font-sandro">
             The Ultimate Governance & Utility Token
           </h2>
           <div>
@@ -32,8 +32,8 @@ const WhyBabble = () => {
                 top of that passive income earnings based on generated revenue.
               </p>
 
-              <div className="btn-group flex items-center gap-x-2">
-                <button className="btn-primary px-4 py-3 ">
+              <div className="btn-group flex gap-y-3 flex-col md:flex-row items-center gap-x-2">
+                <button className="btn-primary w-full md:w-auto  px-4 py-3 ">
                   <svg
                     width="22"
                     height="18"
@@ -51,7 +51,7 @@ const WhyBabble = () => {
                   </svg>
                   <span> Join Discord</span>
                 </button>
-                <button className="btn-primary px-4 py-3 ">
+                <button className="btn-primary w-full md:w-auto  px-4 py-3 ">
                   <svg
                     width="21"
                     height="18"
