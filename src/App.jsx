@@ -7,6 +7,7 @@ import Contract from './components/Contract/Contract';
 import Tokenomics from './components/Tokenomics/Tokenomics';
 import OurPartners from './components/OurPartners/OurPartners';
 import Contact from './components/Contact/Contact';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Tokenomics />
       <OurPartners />
       <Contact />
+      <Footer />
     </>
   );
 }
