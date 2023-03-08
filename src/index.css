@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'MacPaw';
+  src: url('./assets/fonts/MacPawFixel/MacPawFixelDisplay/OpenType-PS/MacPawFixelDisplay-Regular.otf')
+    format('opentype');
+}
+@font-face {
+  font-family: 'MacPaw-light';
+  src: url('./assets/fonts/MacPawFixel/MacPawFixelDisplay/OpenType-PS/MacPawFixelDisplay-Light.otf')
+    format('opentype');
+  font-weight: 200;
+}
+/* Webfont: MacPawFixelText-Regular */
+@font-face {
+  font-family: 'MacPawFixelTextRegular';
+  src: url('./assets/fonts/MacPawFixel/MacPawFixelText/Web-PS/MacPawFixelText-Regular.woff2')
+    format('woff2');
+}
+
+p {
+  font-family: 'MacPaw-light';
+}
+@font-face {
+  font-family: 'sandrogrottesco';
+  src: url('./assets/fonts/sandrogrottesco.otf');
+}
+body {
+  background-color: #0d141b;
+  color: #fcfcfc;
+  height: 100%;
+}
+
+li {
+  font-family: 'MacPawFixelTextRegular';
+  font-weight: normal;
+}
+
+@layer components {
+  .container {
+    @apply px-5 lg:px-20 mx-auto;
+  }
+
+  .btn-primary {
+    background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.3) 0%,
+        rgba(255, 255, 255, 0) 100%
+      ),
+      linear-gradient(106.27deg, #ed2196 16.3%, #ed4621 87.94%);
+
+    box-shadow: 0px 7px 21px rgba(243, 95, 180, 0.4);
+    border-radius: 10px;
+    @apply text-[14px] gap-x-3 flex items-center font-sandro  cursor-pointer;
+  }
+  .btn-primary:hover {
+    background: linear-gradient(
+        rgba(255, 255, 255, 0.3) 0%,
+        rgba(255, 255, 255, 0) 100%
+      ),
+      rgb(255, 62, 133);
+  }
+  .menu_btn {
+    background: rgba(255, 255, 255, 0.05);
+    @apply px-6 text-[14px] py-3 font-sandro rounded-[12px];
+    box-shadow: 0px 7px 21px rgba(0, 0, 0, 0.07);
+  }
+  .nav-link:hover {
+    background: rgb(47, 56, 65);
+  }
+  .menu_btn:hover {
+    background: rgba(0, 139, 255, 0.15);
+  }
+  .main-container {
+    @apply max-w-[1600px] mx-auto px-5 lg:px-10;
+  }
+}
