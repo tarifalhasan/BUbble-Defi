@@ -1,5 +1,6 @@
 import './App.css';
-import { lazy } from 'react';
+import { lazy, Suspense } from 'react';
+import Loading from './components/Loading';
 const Header = lazy(() => import('./components/Header/Header'));
 const WhyBabble = lazy(() => import('./components/whybabble/WhyBabble'));
 const Farming = lazy(() => import('./components/Farming/Farming'));
@@ -12,7 +13,7 @@ const Footer = lazy(() => import('./components/Footer/Footer'));
 
 function App() {
   return (
-    <>
+    <Suspense fallback={<Loading />}>
       <Header />
       <WhyBabble />
       <Farming />
@@ -23,7 +24,7 @@ function App() {
       <OurPartners />
 
       <Footer />
-    </>
+    </Suspense>
   );
 }
 
