@@ -13,7 +13,7 @@ const OurPartners = () => {
         </h2>
         <div className="grid gap-9 grid-cols-1 lg:grid-cols-4">
           <div className="partner">
-            <a href="pinksale.finance" target="_blank">
+            <a href="https://www.pinksale.finance/" target="_blank">
               <img className="w-[200px]" src={pinksale} alt="" />
             </a>
           </div>
