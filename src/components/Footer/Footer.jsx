@@ -18,7 +18,7 @@ const Footer = () => {
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
-              fill-rule="evenodd"
+              fillRule="evenodd"
               d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"
             ></path>
           </svg>
@@ -53,7 +53,7 @@ const Footer = () => {
                 fill="currentColor"
                 strokeWidth="0"
                 viewBox="0 0 640 512"
-                class="hoverIcon"
+                className="hoverIcon"
                 height="1em"
                 width="1em"
                 xmlns="http://www.w3.org/2000/svg"
@@ -73,7 +73,7 @@ const Footer = () => {
                 fill="currentColor"
                 strokeWidth="0"
                 viewBox="0 0 448 512"
-                class="hoverIcon"
+                className="hoverIcon"
                 height="1em"
                 width="1em"
                 xmlns="http://www.w3.org/2000/svg"
@@ -93,7 +93,7 @@ const Footer = () => {
                 fill="currentColor"
                 strokeWidth="0"
                 viewBox="0 0 512 512"
-                class="hoverIcon"
+                className="hoverIcon"
                 height="1em"
                 width="1em"
                 xmlns="http://www.w3.org/2000/svg"
@@ -113,7 +113,7 @@ const Footer = () => {
                 fill="currentColor"
                 strokeWidth="0"
                 viewBox="0 0 16 16"
-                class="hoverIcon"
+                className="hoverIcon"
                 height="1em"
                 width="1em"
                 xmlns="http://www.w3.org/2000/svg"
@@ -134,7 +134,7 @@ const Footer = () => {
                 strokeWidth="0"
                 role="img"
                 viewBox="0 0 24 24"
-                class="hoverIcon"
+                className="hoverIcon"
                 height="1em"
                 width="1em"
                 xmlns="http://www.w3.org/2000/svg"

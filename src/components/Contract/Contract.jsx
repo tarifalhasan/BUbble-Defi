@@ -6,13 +6,15 @@ const Contract = () => {
   return (
     <section id="contract" className="my-10 relative lm">
       <div className="absolute top-[10%] md:top-[5%] lg:-top-[10%] -z-10 left-0">
-        <img src={gradient} alt="" />
+        <img className="w-full" src={gradient} alt="" />
       </div>
       <div className="relative container z-20">
         <div>
-          <p className="text-[14px] m-10 font-light font-MacPawFixel">
-            Maximize Liquidity & Earn <br /> Passive Rewards with BubbleSwap
-          </p>
+          <div className="sr-only md:not-sr-only">
+            <p className="text-[14px] m-10 font-light font-MacPawFixel">
+              Maximize Liquidity & Earn <br /> Passive Rewards with BubbleSwap
+            </p>
+          </div>
           <img className="hidden lg:block" src={conteactImg} alt="" />
           <img className="lg:hidden" src={contractImgMobile} alt="" />
           <div className="lg:flex my-1">
@@ -39,42 +41,42 @@ const Contract = () => {
       <div className="bubble my-3 container px-2">
         <div className="grid gap-0 md:gap-4 lg:gap-0 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
           <div className="bubble_contract rounded-tr-3xl  rounded-tl-3xl  md:rounded-3xl">
-            <p className="md:text-centergap-x-2 flex items-center py-5 md:block">
+            <div className="md:text-centergap-x-2 flex items-center py-5 md:block">
               <h1 className="md:text-[26px] font-bold text-[3em] font-sandro text-pink-500">
                 5%
               </h1>
               <p className="text-[#3A5168] text-[0.813em] font-sandro">
                 on all $BUB pairs
               </p>
-            </p>
+            </div>
           </div>
           <div className="bubble_contract md:rounded-3xl lg:mt-8">
-            <p className="md:text-centergap-x-2 flex items-center py-5 md:block">
+            <div className="md:text-centergap-x-2 flex items-center py-5 md:block">
               <h1 className="md:text-[26px] font-bold text-[3em] font-sandro text-pink-500">
                 All
               </h1>
               <p className="text-[#3A5168]  text-[0.813em] font-sandro">
                 LP tokens burned forever
               </p>
-            </p>
+            </div>
           </div>
           <div className="bubble_contract  md:rounded-3xl lg:mt-14">
-            <p className="md:text-centergap-x-2 flex items-center py-5 md:block">
+            <div className="md:text-centergap-x-2 flex items-center py-5 md:block">
               <h1 className="md:text-[26px] font-bold text-[3em] font-sandro text-pink-500">
                 100%
               </h1>
               <p className="text-[#3A5168] text-[0.813em] font-sandro">
                 LP tokens burned forever
               </p>
-            </p>
+            </div>
           </div>
           <div className="bubble_contract rounded-br-3xl  rounded-bl-3xl  md:rounded-3xl lg:mt-24">
-            <p className="md:text-centergap-x-2 flex items-center py-5 md:block">
+            <div className="md:text-centergap-x-2 flex items-center py-5 md:block">
               <h1 className="md:text-[26px] font-bold text-[3em] font-sandro text-pink-500">
                 100%
               </h1>
               <p className="text-[#3A5168] text-[0.813em] font-sandro">SAFU</p>
-            </p>
+            </div>
           </div>
         </div>
       </div>

@@ -48,19 +48,26 @@ const Header = () => {
       {/* Hero aria */}
       <div className=" z-30">
         <div className="">
-          <div className="grid grid-cols-1 container pt-10 md:pt-20 lg:grid-cols-2">
+          <div className="grid grid-cols-1 px-0 container pt-10 md:pt-20 lg:grid-cols-2">
             <div className=" md:pt-10">
-              <h2 className=" m-0 relative p-0  leading-[2] md:leading-[1.5] text-[24px] lg:text-[40px] font-sandro uppercase">
-                <span className="ml-10"> Unleash the Power</span>
-                <span className="block "> of Liquid Trading</span>
+              <h2 className="text-center md:text-left m-0 relative p-0  leading-[2] md:leading-[1.5] text-[24px] lg:text-[40px] font-sandro uppercase">
+                <span className="md:ml-10"> Unleash the Power</span>
+                <span className="inline md:block "> of Liquid Trading</span>
 
                 <div className="-z-10 absolute left-[44%] top-[16%]">
-                  <img src={bubble1} alt="bubble1" />
+                  <img
+                    className="w-[120px] md:w-auto"
+                    src={bubble1}
+                    alt="bubble1"
+                  />
                 </div>
                 <div className="absolute left-[34%] -z-10 top-[-18%]">
                   <img src={bubble2} alt="bubble1" />
                 </div>
               </h2>
+              <span className="text-[1em] text-center block md:hidden text-[#C3C9DA] font-sandro">
+                with Bubble DeFi!
+              </span>
               <div className="hidden md:block space-y-3 lg:ml-16 mr-7 ">
                 <span className="text-[23px] block text-[#C3C9DA] font-sandro">
                   with Bubble DeFi!
@@ -101,6 +108,30 @@ const Header = () => {
                   suboptimal trades and hello to efficient, secure, and
                   profitable market activity.
                 </p>
+                <button
+                  className="hover:text-slate-50 mt-4 mx-auto block"
+                  onClick={() =>
+                    window.scrollTo({
+                      top: window.innerHeight,
+                      behavior: 'smooth',
+                    })
+                  }
+                >
+                  <svg
+                    width="35"
+                    height="35"
+                    viewBox="0 0 44 44"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M22 31.3333L12.6667 22M22 31.3333V12.6667M22 31.3333L31.3333 22M43 22C43 10.402 33.598 1 22 1C10.402 1 1 10.402 1 22C1 33.598 10.402 43 22 43C33.598 43 43 33.598 43 22Z"
+                      stroke="#F1F5FD"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </button>
               </div>
             </div>
           </div>
@@ -117,8 +148,8 @@ const Header = () => {
           }
         >
           <svg
-            width="44"
-            height="44"
+            width="36"
+            height="36"
             viewBox="0 0 44 44"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"

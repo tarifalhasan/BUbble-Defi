@@ -5,16 +5,16 @@ const Card = lazy(() => import('./Card'));
 
 const Farming = () => {
   return (
-    <div className="container space-y-2 md:mt-[8rem] lg:px-12 py-6">
+    <div className="container px-0 space-y-2 md:mt-[8rem] lg:px-12 py-6">
       <div
         id="farming"
-        className="grid grid-cols-1 gap-y-10 px-8 lg:px-12  py-3 md:grid-cols-2"
+        className="grid  rounded-0 md:rounded-3xl grid-cols-1 gap-y-10 px-8 lg:px-12  py-3 md:grid-cols-2"
       >
-        <div className="space-y-3 pt-7 py-3 text-center md:text-left">
-          <p className="text-[2em] uppercase font-sandro">
+        <div className="space-y-6 md:space-y-3 pt-7 py-3 text-center md:text-left">
+          <p className="font-light text-[1.425em] md:text-[2em] uppercase font-sandro">
             Liquidity Yield Farming
           </p>
-          <p className="text-[1.25em] font-MacPawFixel font-light leading-[1.5]">
+          <p className="text-[0.875em] md:text-[1.25em] font-MacPawFixel  leading-[1.5]">
             Join the revolution and take control of your financial future with
             Bubble's $BUB token.
           </p>
@@ -32,7 +32,7 @@ const Farming = () => {
           <img
             className="w-full max-w-[400px] block my-4 mx-auto"
             src={farming}
-            alt=""
+            alt="farming"
           />
         </div>
       </div>

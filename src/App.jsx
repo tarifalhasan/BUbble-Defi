@@ -19,8 +19,9 @@ function App() {
       <Arbitrum />
       <Contract />
       <Tokenomics />
-      <OurPartners />
       <Contact />
+      <OurPartners />
+
       <Footer />
     </>
   );
