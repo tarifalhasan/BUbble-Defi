@@ -5,7 +5,7 @@ export const navLinks = [
   },
   {
     name: 'BubbleSwap',
-    href: '#bubbleSwap',
+    href: '#home',
   },
   {
     name: 'Farming',
@@ -17,7 +17,11 @@ export const navLinks = [
   },
   {
     name: 'Protocol',
-    href: '#protocol',
+    href: '#farming',
+  },
+  {
+    name: 'Contract',
+    href: '#contract',
   },
   {
     name: 'Tokenomics',
@@ -26,9 +30,5 @@ export const navLinks = [
   {
     name: 'Partners',
     href: '#partners',
-  },
-  {
-    name: 'Contract',
-    href: '#contract',
   },
 ];

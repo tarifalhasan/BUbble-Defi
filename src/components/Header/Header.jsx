@@ -20,7 +20,7 @@ const Header = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <div className="relative">
+    <div id="home" className="relative">
       <div className="hidden md:block top-[20%] lg:top-0 absolute -z-20 right-0">
         <img
           className=" md:max-w-[1000px] lg:max-w-[800px]"

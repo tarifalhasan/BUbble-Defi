@@ -26,8 +26,8 @@ const MobileMenu = ({ openNavbar, isOpen }) => {
         </div>
       </div>
       <ul className="flex flex-col pt-7 md:flex-row gap-6">
-        {navLinks.map((link) => (
-          <li key={link.href} className="text-white" onClick={openNavbar}>
+        {navLinks.map((link, index) => (
+          <li key={index} className="text-white" onClick={openNavbar}>
             <a
               href={link.href}
               className="block py-2 pl-3 pr-4 text-white text-base leading-[19px] font-bold font-segoe"
@@ -36,9 +36,17 @@ const MobileMenu = ({ openNavbar, isOpen }) => {
             </a>
           </li>
         ))}
-        <button type="button" className="menu_btn font-sandro">
-          Launch App
-        </button>
+
+        <a
+          href="https://dapp.bubbledefi.com/"
+          target="_blank"
+          className="w-full "
+          rel="noopener noreferrer"
+        >
+          <button type="button" className="menu_btn w-full font-sandro">
+            Launch App
+          </button>
+        </a>
       </ul>
     </div>
   );
