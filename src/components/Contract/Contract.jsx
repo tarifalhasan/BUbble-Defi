@@ -42,7 +42,7 @@ const Contract = () => {
         <div className="grid gap-0 md:gap-4 lg:gap-0 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
           <div className="bubble_contract rounded-tr-3xl  rounded-tl-3xl  md:rounded-3xl">
             <div className="md:text-centergap-x-2 flex items-center py-5 md:block">
-              <h1 className="md:text-[26px] font-bold text-[3em] font-sandro text-pink-500">
+              <h1 className="text-[36px] font-bold lg:text-[3em] font-sandro text-pink-500">
                 5%
               </h1>
               <p className="text-[#3A5168] text-[0.813em] font-sandro">
@@ -52,7 +52,7 @@ const Contract = () => {
           </div>
           <div className="bubble_contract md:rounded-3xl lg:mt-8">
             <div className="md:text-centergap-x-2 flex items-center py-5 md:block">
-              <h1 className="md:text-[26px] font-bold text-[3em] font-sandro text-pink-500">
+              <h1 className="text-[36px] font-bold lg:text-[3em] font-sandro text-pink-500">
                 All
               </h1>
               <p className="text-[#3A5168]  text-[0.813em] font-sandro">
@@ -62,7 +62,7 @@ const Contract = () => {
           </div>
           <div className="bubble_contract  md:rounded-3xl lg:mt-14">
             <div className="md:text-centergap-x-2 flex items-center py-5 md:block">
-              <h1 className="md:text-[26px] font-bold text-[3em] font-sandro text-pink-500">
+              <h1 className="text-[36px] font-bold lg:text-[3em] font-sandro text-pink-500">
                 100%
               </h1>
               <p className="text-[#3A5168] text-[0.813em] font-sandro">
@@ -72,7 +72,7 @@ const Contract = () => {
           </div>
           <div className="bubble_contract rounded-br-3xl  rounded-bl-3xl  md:rounded-3xl lg:mt-24">
             <div className="md:text-centergap-x-2 flex items-center py-5 md:block">
-              <h1 className="md:text-[26px] font-bold text-[3em] font-sandro text-pink-500">
+              <h1 className="text-[36px] font-bold lg:text-[3em] font-sandro text-pink-500">
                 100%
               </h1>
               <p className="text-[#3A5168] text-[0.813em] font-sandro">SAFU</p>
