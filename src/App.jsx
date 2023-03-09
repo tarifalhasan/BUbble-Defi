@@ -1,7 +1,9 @@
 import './App.css';
 import { lazy, Suspense } from 'react';
 import Loading from './components/Loading';
+
 const Header = lazy(() => import('./components/Header/Header'));
+
 const WhyBabble = lazy(() => import('./components/whybabble/WhyBabble'));
 const Farming = lazy(() => import('./components/Farming/Farming'));
 const Arbitrum = lazy(() => import('./components/Arbitrum/Arbitrum'));

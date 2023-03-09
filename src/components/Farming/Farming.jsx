@@ -24,7 +24,10 @@ const Farming = () => {
             protocol's generated revenue. Empower yourself and become a part of
             the decentralized financial movement with Bubble.
           </p>
-          <button className="btn-primary uppercase w-full md:w-auto px-4 py-3">
+          <button
+            title="comming soon..."
+            className="btn-primary uppercase w-full md:w-auto px-4 py-3"
+          >
             Start Earning Yield
           </button>
         </div>
