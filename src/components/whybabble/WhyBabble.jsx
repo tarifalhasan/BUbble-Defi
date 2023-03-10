@@ -38,8 +38,8 @@ const WhyBabble = () => {
 
               <div className="btn-group flex gap-y-3 flex-col md:flex-row items-center gap-x-2">
                 <a
-                  href=" https://t.me/BubbleDefiPortal"
-                  className="w-full"
+                  href=" https://discord.com/invite/J99shRsxHC"
+                  className="w-full md:w-auto"
                   target={'_blank'}
                 >
                   <button className="btn-primary uppercase w-full md:w-auto  px-4 py-4 ">
@@ -62,8 +62,8 @@ const WhyBabble = () => {
                   </button>
                 </a>
                 <a
-                  href="https://discord.com/invite/J99shRsxHC"
-                  className="w-full"
+                  href="https://t.me/BubbleDefiPortal "
+                  className="w-full md:w-auto"
                   target="_blank"
                 >
                   <button className="btn-primary uppercase w-full md:w-auto  px-4 py-4 ">
