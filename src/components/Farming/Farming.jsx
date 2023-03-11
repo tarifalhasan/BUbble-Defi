@@ -1,7 +1,6 @@
-import React, { lazy } from 'react';
-import farming from '../../assets/image/farming.png';
+import React from 'react';
 
-const Card = lazy(() => import('./Card'));
+import Card from './Card';
 
 const Farming = () => {
   return (
@@ -34,7 +33,7 @@ const Farming = () => {
         <div className="flex pt-5 items-center">
           <img
             className="w-full max-w-[400px] block my-4 mx-auto"
-            src={farming}
+            src={'/image/farming.png'}
             alt="farming"
           />
         </div>

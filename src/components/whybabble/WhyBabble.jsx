@@ -1,17 +1,19 @@
 import React from 'react';
-import whyusimg from '../../assets/image/whybabble.png';
-import whyusimgmobile from '../../assets/image/whybubblemobile.png';
-import discordIcon from '../../assets/image/brand-discord.svg';
+
 const WhyBabble = () => {
   return (
     <div className="relative">
       <div className="flex flex-col lg:flex-row mt-32 container md:px-14 items-center">
         <div className=" basis-[35%] ">
           <div className="hidden md:block absolute -z-10 top-[-28%]  md:-top-[60%] left-0">
-            <img className="lg:max-w-[600px]" src={whyusimg} alt="" />
+            <img
+              className="lg:max-w-[600px]"
+              src="/image/whybabble.png"
+              alt=""
+            />
           </div>
           <div className="md:sr-only absolute -z-10 top-[-28%]  md:-top-[60%] left-0">
-            <img src={whyusimgmobile} alt="" />
+            <img src={'/image/whybubblemobile.png'} alt="" />
           </div>
         </div>
         <div className=" basis-[65%] text-center md:text-left mt-[20rem] md:mt-32 lg:mt-1 z-20 space-y-7 ">

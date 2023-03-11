@@ -1,18 +1,8 @@
 import React, { useState, lazy } from 'react';
 
-const Navbar = lazy(() => import('../Navbar/Navbar'));
-
-import collectWallectImg from '../../assets/image/collectwallat.png';
-import collectWallectImgMobile from '../../assets/image/collectwalletmobile.png';
-import bingImg from '../../assets/image/header.png';
-import graidint1 from '../../assets/image/hero-bg.png';
+import Navbar from '../Navbar/Navbar';
 import MobileMenu from '../Navbar/MobileMenu';
-import bubble1 from '../../assets/image/drop.3fea1a245d051d03eed8.png';
-import bubble2 from '../../assets/image/drop1.62681e765f4af08909e0.png';
-import logo from '../../assets/image/logo.png';
-import hombargarMenu from '../../assets/image/menu.png';
 
-import close from '../../assets/image/close.png';
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -24,22 +14,22 @@ const Header = () => {
       <div className="hidden md:block top-[20%] lg:top-0 absolute -z-20 right-0">
         <img
           className=" md:max-w-[1000px] lg:max-w-[800px]"
-          src={bingImg}
+          src="/image/header.png"
           alt=""
         />
       </div>
       <div className="absolute md:top-0 -z-40 left-0">
-        <img className=" h-[358px] md:h-auto" src={graidint1} alt="" />
+        <img className=" h-[358px] md:h-auto" src="/image/hero-bg.png" alt="" />
       </div>
       <div className="flex gap-10 container max-w-[1920px] lg:hidden  items-center">
         <button onClick={openNav}>
           {!isOpen ? (
-            <img src={hombargarMenu} alt="" />
+            <img src="/image/menu.png" alt="" />
           ) : (
-            <img src={close} alt="" />
+            <img src="/image/close.png" alt="" />
           )}
         </button>
-        <img className="w-[135px]" src={logo} alt="" />
+        <img className="w-[135px]" src="/image/logo.png" alt="bubbledefi" />
       </div>
       <Navbar />
 
@@ -57,12 +47,15 @@ const Header = () => {
                 <div className="-z-10 absolute left-[44%] top-[16%]">
                   <img
                     className="w-[120px] md:w-auto"
-                    src={bubble1}
+                    src="/image/drop.3fea1a245d051d03eed8.png"
                     alt="bubble1"
                   />
                 </div>
                 <div className="absolute left-[34%] -z-10 top-[-18%]">
-                  <img src={bubble2} alt="bubble1" />
+                  <img
+                    src="/image/drop1.62681e765f4af08909e0.png"
+                    alt="bubble2"
+                  />
                 </div>
               </h2>
               <span className="text-[1em] text-center block md:hidden text-[#C3C9DA] font-sandro">
@@ -89,12 +82,12 @@ const Header = () => {
             <div>
               <img
                 className=" hidden lg:block w-[120%]"
-                src={collectWallectImg}
-                alt="collectWallectImgMobile"
+                src="/image/collectwallat.png"
+                alt="collectWallectImg"
               />
               <img
                 className="mt-[42px] lg:hidden"
-                src={collectWallectImgMobile}
+                src="/image/collectwalletmobile.png"
                 alt="collectWallectImgMobile"
               />
               <div className="md:hidden space-y-3 px-5">

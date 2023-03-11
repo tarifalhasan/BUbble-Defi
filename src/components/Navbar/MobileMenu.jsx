@@ -1,11 +1,7 @@
-import React, { useState, useEffect } from 'react';
-import logo from '../../assets/image/logo.png';
-import hombargarMenu from '../../assets/image/menu.png';
+import React from 'react';
+
 import { navLinks } from '../../constant/data';
-import close from '../../assets/image/close.png';
-import gradient1 from '../../assets/image/overlydown.png';
-import graident from '../../assets/image/mobilemenugradient.png';
-import icon from '../../assets/image/icon.png';
+
 const MobileMenu = ({ openNavbar, isOpen }) => {
   return (
     <div
@@ -16,10 +12,10 @@ const MobileMenu = ({ openNavbar, isOpen }) => {
       <div className="logo  flex  justify-between">
         <div className="flex gap-x-10 items-center">
           <button onClick={() => openNavbar()}>
-            <img className="w-[21px]" src={close} alt="" />
+            <img className="w-[21px]" src={'/image/close.png'} alt="" />
           </button>
           <img
-            src={logo}
+            src={'/image/logo.png'}
             className="h-[49px] mr-3 sm:h-[56px]"
             alt="solve3web"
           />

@@ -1,21 +1,16 @@
 import React from 'react';
-import bubble from '../../assets/image/bubble.png';
-import discard from '../../assets/image/discard.png';
-import telegram from '../../assets/image/telegram.png';
-import twitter from '../../assets/image/twitter.png';
-import getbook from '../../assets/image/getbook.png';
-import medium from '../../assets/image/medium.png';
+
 const Contact = () => {
   return (
     <div className="container pt-20 pb-8">
       <div className="relative">
-        <img className="block mx-auto" src={bubble} alt="" />
+        <img className="block mx-auto" src={'/image/bubble.png'} alt="" />
         <div className="absolute top-[10%] md:top-[26%] left-1/2 transform -translate-x-1/2 -translate-y-1/2">
           <a href="https://discord.com/invite/J99shRsxHC" target={'_blank'}>
             <img
               className=" max-w-[100px] md:max-w-[220px] Imghover"
-              src={discard}
-              alt=""
+              src={'/image/discard.png'}
+              alt="discord"
             />
           </a>
         </div>
@@ -24,15 +19,15 @@ const Contact = () => {
             <a href="https://t.me/BubbleDefiPortal" target={'_blank'}>
               <img
                 className=" max-w-[100px] md:max-w-[220px] Imghover"
-                src={telegram}
-                alt=""
+                src={'/image/telegram.png'}
+                alt="bubbledefitelegram"
               />
             </a>
             <a href="https://twitter.com/Bubble_DeFi" target={'_blank'}>
               <img
                 className="max-w-[100px] md:max-w-[220px] Imghover"
-                src={twitter}
-                alt=""
+                src={'/image/twitter.png'}
+                alt="twitter"
               />
             </a>
           </div>
@@ -41,7 +36,7 @@ const Contact = () => {
           <a href="https://medium.com/@Bubble_DeFi" target={'_blank'}>
             <img
               className="max-w-[100px] md:max-w-[220px] Imghover"
-              src={medium}
+              src={'/image/medium.png'}
               alt=""
             />
           </a>
@@ -50,7 +45,7 @@ const Contact = () => {
           <a href="https://docs.bubbledefi.xyz/bubbledefi/" target={'_blank'}>
             <img
               className="max-w-[100px] md:max-w-[220px] Imghover"
-              src={getbook}
+              src={'/image/getbook.png'}
               alt=""
             />
           </a>
@@ -59,7 +54,7 @@ const Contact = () => {
           <span className="tezr"> PITCH DECK</span>
         </button>
         <div className="hidden md:block absolute top-[90%] md:top-[83%] lg:top-[72%] right-[10%]">
-          <a href="/youpath" className="w-full" download>
+          <a href="/pitchdeck.pdf" className="w-full" download>
             <button className="w-full btn-primary px-9 py-4">PITCH DECK</button>
           </a>
         </div>

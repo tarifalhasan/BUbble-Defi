@@ -1,12 +1,10 @@
 import React from 'react';
-import conteactImg from '../../assets/image/contract.png';
-import contractImgMobile from '../../assets/image/bubblemobile.png';
-import gradient from '../../assets/image/contrctlight.png';
+
 const Contract = () => {
   return (
     <section id="contract" className="my-10 relative lm">
       <div className="absolute top-[10%] md:top-[5%] lg:-top-[10%] -z-10 left-0">
-        <img className="w-full" src={gradient} alt="" />
+        <img className="w-full" src={'/image/contrctlight.png'} alt="" />
       </div>
       <div className="relative container z-20">
         <div>
@@ -15,8 +13,16 @@ const Contract = () => {
               Maximize Liquidity & Earn <br /> Passive Rewards with BubbleSwap
             </p>
           </div>
-          <img className="hidden lg:block" src={conteactImg} alt="" />
-          <img className="lg:hidden" src={contractImgMobile} alt="" />
+          <img
+            className="hidden lg:block"
+            src={'/image/contract.png'}
+            alt="bubbledefi"
+          />
+          <img
+            className="lg:hidden"
+            src={'/image/bubblemobile.png'}
+            alt="image/bubblemobile.png'"
+          />
           <div className="lg:flex my-1">
             <div className="basis-[40%]"></div>
             <div className="basis-[60%] text-center md:text-left">

@@ -1,11 +1,11 @@
 import React from 'react';
-import ArbitrumImg from '../../assets/image/Arbitrum.png';
+
 const Arbitrum = () => {
   return (
     <section id="arbitrum">
       <div className="grid px-4 container lg:px-14 grid-cols-1 lg:grid-cols-2">
         <div>
-          <img src={ArbitrumImg} alt="ArbitrumImg" />
+          <img src={'/image/Arbitrum.png'} alt="ArbitrumImg" />
         </div>
         <div className="relative w-full lg:max-w-[560px]">
           <div className="space-y-4 text-center md:text-left lg:absolute top-[36%]">

@@ -1,9 +1,5 @@
 import React from 'react';
-import gotbitLogo from '../../assets/image/gotbit.png';
-import pinksale from '../../assets/image/pinksale.png';
-import dexview from '../../assets/image/dexview.png';
-import catapult from '../../assets/image/catapult.svg';
-import logo from '../../assets/image/logo.png';
+
 const OurPartners = () => {
   return (
     <div id="partners" className="container pb-10 md:pb-20 lg:px-14  px-2 py-4">
@@ -14,28 +10,36 @@ const OurPartners = () => {
         <div className="grid gap-9 grid-cols-1 lg:grid-cols-4">
           <div className="partner">
             <a href="https://www.pinksale.finance/" target="_blank">
-              <img className="w-[200px]" src={pinksale} alt="" />
+              <img
+                className="w-[200px]"
+                src={'/image/pinksale.png'}
+                alt="/image/pinksale.png"
+              />
             </a>
           </div>
           <div className="partner">
             <a href="https://www.dexview.com/" target={'_blank'}>
-              <img className="w-[200px]" src={dexview} alt="" />
+              <img className="w-[200px]" src={'/image/dexview.png'} alt="" />
             </a>
           </div>
           <div className="partner">
             <a href="https://gotbit.io/" target={'_blank'}>
-              <img className="w-[200px]" src={gotbitLogo} alt="" />
+              <img
+                className="w-[200px]"
+                src={'/image/gotbit.png'}
+                alt="https://gotbit.io/"
+              />
             </a>
           </div>
           <div className="partner">
             <a href="https://catapult.ac/" target={'_blank'}>
-              <img className="w-[200px]" src={catapult} alt="" />
+              <img className="w-[200px]" src={'/image/catapult.svg'} alt="" />
             </a>
           </div>
         </div>
       </div>
       <div className="logo block md:hidden  mt-6  absolute">
-        <img className="w-[200px]" src={logo} alt="logo" />
+        <img className="w-[200px]" src={'/image/logo.png'} alt="logo" />
       </div>
     </div>
   );
